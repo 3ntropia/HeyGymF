@@ -1,23 +1,26 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import {LoginComponent} from './login.component';
 import {ClientComponent} from './client.component';
+import {ClientService} from './services/client.service';
+import {AppRoutingModule} from './app-routing.module';
+import {BrowserModule} from '@angular/platform-browser';
 import {FormsModule} from '@angular/forms';
 import {HttpModule} from '@angular/http';
-import {ClientService} from './services/client.service';
 
 @NgModule({
-  declarations: [
-    AppComponent,
+  imports: [
+    BrowserModule,
     FormsModule,
     HttpModule,
-    BrowserModule,
+    AppRoutingModule
+  ],
+  declarations: [
+    AppRoutingModule,
+    AppComponent,
     LoginComponent,
     ClientComponent
-  ],
-  imports: [
   ],
   providers: [
     ClientService
