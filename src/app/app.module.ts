@@ -17,7 +17,6 @@ import {HttpModule} from '@angular/http';
     AppRoutingModule
   ],
   declarations: [
-    AppRoutingModule,
     AppComponent,
     LoginComponent,
     ClientComponent
