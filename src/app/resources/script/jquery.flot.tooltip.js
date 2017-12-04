@@ -100,7 +100,7 @@
             if (item) {
                 var tipText;
 
-                // convert tooltip content template to real tipText
+                // convert tooltip content templates to real tipText
                 tipText = that.stringFormat(that.tooltipOptions.content, item);
 
                 $tip.html( tipText );
@@ -169,7 +169,7 @@
 
     /**
      * core function, create tooltip content
-     * @param  {string} content - template with tooltip content
+     * @param  {string} content - templates with tooltip content
      * @param  {object} item - Flot item
      * @return {string} real tooltip content for current item
      */
