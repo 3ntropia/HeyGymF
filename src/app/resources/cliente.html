@@ -1,0 +1,46 @@
+<!--<a id="totop" href="#"><i class="fa fa-angle-up"></i></a>
+
+<div id="wrapper">
+
+
+  &lt;!&ndash;BEGIN PAGE WRAPPER&ndash;&gt;
+  <div id="page-wrapper">
+    &lt;!&ndash;BEGIN TITLE & BREADCRUMB PAGE&ndash;&gt;
+    <div id="title-breadcrumb-option-demo" class="page-title-breadcrumb">
+      <div class="page-header pull-left">
+        <div class="page-title">
+          Alta de Cliente
+        </div>
+      </div>
+      <div class="clearfix">
+      </div>
+    </div>
+    &lt;!&ndash;END TITLE & BREADCRUMB PAGE&ndash;&gt;
+    &lt;!&ndash;BEGIN CONTENT&ndash;&gt;
+    <div class="page-content">
+      <div id="tab-general">
+
+        &lt;!&ndash; Daro: Aca va lo contenido en la pestaña &ndash;&gt;
+        <input id="nombreUsuario" type="text" name="nombreUsuario" placeholder="Nombre" style="color: black"><br>
+        <input id="nombreUsuario2" type="text" name="nombreUsuario" placeholder="Apellido" style="color: black"><br>
+        <input type="submit" value="Submit" style="color: black">
+
+      </div>
+    </div>
+  </div>
+
+</div>-->
+<ul class="heroes">
+  <li *ngFor="let client of clients" (click)="onSelect(client)" [class.selected]="client === selectedClient">
+    <!-- each hero goes here -->
+    <span class="badge">{{client.id}}</span> {{client.name}} {{client.surname}}
+    <button class="delete"
+            (click)="delete(client); $event.stopPropagation()">x</button>
+  </li>
+  <div>
+    <label>Client name:</label> <input #clientName />
+    <button (click)="add(clientName.value); clientName.value=''">
+      Add
+    </button>
+  </div>
+</ul>

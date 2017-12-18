@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: '../resources/home.html',
+  selector: 'app-home',
+  templateUrl: '../resources/documentation.html',
   styleUrls: ['./app.component.css',
     '../resources/styles/jquery-ui-1.10.4.custom.min.css',
     '../resources/styles/font-awesome.min.css',
@@ -15,6 +15,6 @@ import { Component } from '@angular/core';
     '../resources/styles/pace.css',
     '../resources/styles/jquery.news-ticker.css']
 })
-export class AppComponent {
+export class DocComponent {
   title = 'Hey-Steve';
 }
