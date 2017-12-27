@@ -12,6 +12,9 @@ import {HomeComponent} from './home.component';
 import {DocComponent} from './doc.component';
 import {InMemoryWebApiModule} from 'angular-in-memory-web-api';
 import {InMemoryDataService} from './in-memory-data.service';
+import {DashboardComponent} from './dashboard.component';
+import {ClientSearchComponent} from './client-search.component';
+import {ClientSearchService} from '../services/client-search.service';
 
 
 @NgModule({
@@ -27,10 +30,13 @@ import {InMemoryDataService} from './in-memory-data.service';
     LoginComponent,
     ClientComponent,
     HomeComponent,
-    DocComponent
+    DocComponent,
+    DashboardComponent,
+    ClientSearchComponent
   ],
   providers: [
-    ClientService
+    ClientService,
+    ClientSearchService
   ],
   bootstrap: [AppComponent]
 })
