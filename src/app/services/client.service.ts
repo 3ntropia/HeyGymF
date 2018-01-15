@@ -35,7 +35,7 @@ export class ClientService {
     return this.getClients()
       .then(heroes => heroes.find(hero => hero.id === id));
   }
-  getHero(id: number): Promise<Client> {
+  getClient(id: number): Promise<Client> {
     const url = `${this.clientsUrl}/${id}`;
     return this.http.get(url)
       .toPromise()
